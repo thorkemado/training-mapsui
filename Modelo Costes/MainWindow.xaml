@@ -1,0 +1,23 @@
+﻿<Window x:Class="Modelo_Costes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modelo_Costes"
+        xmlns:xaml="clr-namespace:Mapsui.UI.Wpf;assembly=Mapsui.UI.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="243*" Name="MYMAP"/>
+            <ColumnDefinition Width="274*"/>
+            
+        </Grid.ColumnDefinitions>
+        <xaml:MapControl Name="MyMapControl" Grid.Column="0"></xaml:MapControl>
+        <Button Content="Zoom in" Grid.Column="1" HorizontalAlignment="Left" Margin="64,47,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Zoom out" Grid.Column="1" HorizontalAlignment="Left" Margin="64,88,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="new York" Grid.Column="1" HorizontalAlignment="Left" Margin="64,156,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+
+    </Grid>
+    
+</Window>
